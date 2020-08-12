@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form handling</title>
+</head>
+
+<body>
+<!-- "POST" for sensetive information and "GET" for normal info -->
+<form action="#" method="post">
+<fieldset>
+  <legend> Contact us </legend>
+      First Name <br>
+        <input type="text" placeholder="Enter your First Name"><br><br>
+        Last Name <br>
+          <input type="text" placeholder="Enter your Last Name"><br><br>
+        Gender <br>
+        <input type="radio" name="Gender"> Female <!-- name=Gender<var> will select either or value-->
+        <input type="radio" name="Gender"> Male
+        <br><br>
+        Address <br>
+          <input type="text" placeholder="Enter your address"><br><br>
+        City <br>
+          <!-- <select multiple size="3"> --> <!-- to select multiple items at once-->
+          <select>
+            <option value="Select City" selected> Select City </option>
+            <option value="Dhaka"> Dhaka </option>
+            <option value="Chittagong"> Chittagong </option>
+            <option value="Sylhet"> Sylhet </option>
+            <br>
+        <textarea cols="30" rows="10" placeholder="Enter your message here"></textarea>
+        <br>
+
+        <!-- following section will create a combobox -->
+        <form action="#">
+          <h2> Write your Country: </h2>
+          <input list="country">
+          <datalist id="country"> <!-- id to create relationship with "input list"-->
+            <option value="Bangladesh">
+            <option value="USA">
+            <option value="Canada">
+          </datalist>
+         <!--</form> optional -->
+         <!-- This section is for login id and password -->
+        <br><br>
+        <form action="#" method="POST"> <!--POST for sensetive info-->
+          Name:
+          <input type="text"><br><br>
+          Password:
+          <input type="password"><br><br>
+
+          <!-- following codes for creating focus in the feild -->
+          <form action="#" method="POST"> <!--POST for sensetive info-->
+            <label for="nm"> Name </label>
+            <input id="nm" type="text"> <!-- nm or em to create relationship-->
+            <br><br>
+            <label for="em"> Email </label>
+            <input id="em" type="email" required> <!-- required for presence check-->
+            <br><br>
+            <label for="tl"> Phone </label>
+            <input id="tl" type="tel" required> <!-- required for presence check-->
+            <br><br>
+            <label for="web"> Your website url </label>
+            <input id="web" type="url">
+            <br><br>
+            <input type="checkbox" required> I an not a robot
+            <br><br>
+
+            <input type="file"> Browse file to attach <br>
+            <input type="number"> Select any number <br>
+            <input type="date"> Enter your date <br>
+            <input type="range"> Select range <br>
+            <input type="file"> Browse file to attach <br>
+            <input type="reset"> Clear all fields <br>
+            <br><br>
+    <input type="submit" name="" value="Send">
+
+  </fieldset>
+</form>
+</body>
+</html>
