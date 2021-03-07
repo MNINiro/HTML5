@@ -1,81 +1,82 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Form handling</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
 </head>
-
 <body>
-<!-- "POST" for sensetive information and "GET" for normal info -->
-<form action="#" method="post">
-<fieldset>
-  <legend> Contact us </legend>
-      First Name <br>
-        <input type="text" placeholder="Enter your First Name"><br><br>
-        Last Name <br>
-          <input type="text" placeholder="Enter your Last Name"><br><br>
-        Gender <br>
-        <input type="radio" name="Gender"> Female <!-- name=Gender<var> will select either or value-->
-        <input type="radio" name="Gender"> Male
-        <br><br>
-        Address <br>
-          <input type="text" placeholder="Enter your address"><br><br>
+    <form action="#" method="POST">
+    <fieldset>
+        <legend>Contact us</legend>
+        First Name 
+        <input type="text" placeholder="Enter First Name"><br><br>
+        Last Name 
+        <input type="text" placeholder="Enter Last Name"><br> <br>
+        
+        <input type="radio" name="Gender"> Female
+        <input type="radio" name="Gender"> Male <br> <br>
+        Address 
+        <input type="text" placeholder="Enter Address"><br>
+        
         City <br>
-          <!-- <select multiple size="3"> --> <!-- to select multiple items at once-->
-          <select>
-            <option value="Select City" selected> Select City </option>
-            <option value="Dhaka"> Dhaka </option>
-            <option value="Chittagong"> Chittagong </option>
-            <option value="Sylhet"> Sylhet </option>
-            <br>
-        <textarea cols="30" rows="10" placeholder="Enter your message here"></textarea>
-        <br>
-
-        <!-- following section will create a combobox -->
-        <form action="#">
-          <h2> Write your Country: </h2>
-          <input list="country">
-          <datalist id="country"> <!-- id to create relationship with "input list"-->
-            <option value="Bangladesh">
-            <option value="USA">
-            <option value="Canada">
-          </datalist>
-         <!--</form> optional -->
-         <!-- This section is for login id and password -->
+        <select>
+            <option value="Select City" selected>Select City</option>
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>       
+        </select>
         <br><br>
-        <form action="#" method="POST"> <!--POST for sensetive info-->
-          Name:
-          <input type="text"><br><br>
-          Password:
-          <input type="password"><br><br>
+       <textarea cols="30" rows="10" placeholder="Write your remark"></textarea>
+    
+       <form action="#">
+           <h2>Write your country</h2>
+           <input list="country">
+           <datalist id="country">
+               <option value="Bangladesh"></option>
+               <option value="USA"></option>
+               <option value="Canada"></option>
+           </datalist>
+        <br><br>
+        <form action="#" method="POST">
+           User ID or email:
+           <input type="text"><br><br>
+           Password:
+           <input type="password">
+        <br><br>     
 
-          <!-- following codes for creating focus in the feild -->
-          <form action="#" method="POST"> <!--POST for sensetive info-->
-            <label for="nm"> Name </label>
-            <input id="nm" type="text"> <!-- nm or em to create relationship-->
+        <form action="#" method="POST">
+            <label for="nm">Name</label>
+            <input id="nm" type="text">
             <br><br>
-            <label for="em"> Email </label>
-            <input id="em" type="email" required> <!-- required for presence check-->
+
+            <label for="em">Email</label>
+            <input id="em" type="email">
             <br><br>
-            <label for="tl"> Phone </label>
-            <input id="tl" type="tel" required> <!-- required for presence check-->
+
+            <label for="ph">Phone</label>
+            <input id="ph" type="tel">
             <br><br>
-            <label for="web"> Your website url </label>
+
+            <label for="web">Website url</label>
             <input id="web" type="url">
             <br><br>
-            <input type="checkbox" required> I an not a robot
+            
+            <input type="checkbox" required> I am not a robot
             <br><br>
 
-            <input type="file"> Browse file to attach <br>
-            <input type="number"> Select any number <br>
-            <input type="date"> Enter your date <br>
-            <input type="range"> Select range <br>
-            <input type="file"> Browse file to attach <br>
-            <input type="reset"> Clear all fields <br>
-            <br><br>
-    <input type="submit" name="" value="Send">
+            <input type="file"> Browse file to attach <br><br>
+            <input type="number"> Select any number <br><br>
+            <input type="date"> Enter DOB <br><br>
+            <input type="range"> Select range <br><br>
+            <input type="reset"><br><br>
 
-  </fieldset>
-</form>
+            <input type="submit"><br><br>
+        </form>
+      </form> 
+    </form>
+    </fieldset>    
+    </form>
 </body>
 </html>

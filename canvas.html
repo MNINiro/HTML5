@@ -1,0 +1,11 @@
+<canvas id="myCanvas" width="300" height="200"></canvas>
+
+<script type="text/javascript">
+    window.onload = function(){
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.moveTo(50, 150);
+        context.lineTo(250, 50);
+        context.stroke();
+    };
+</script>
